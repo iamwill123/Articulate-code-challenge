@@ -1,38 +1,178 @@
-.App {
+:root {
+  --width-100-p: 100%;
+  --height-100-p: 100%;
+  --border-radius: 6px;
+  --front-transition: transform 0.6s, z-index 0.6s, left 0.45s,
+    opacity 0.1s linear 0.5s;
+  --back-transition: transform 0.6s, z-index 0.6s, left 0.45s,
+    opacity 0.1s linear 0ms;
+  --scale-transition: transform 0.5s cubic-bezier(0.6, 0, 0.4, 1);
+  --box-shadow: 0 0.4rem 1.2rem 0.2rem rgba(0, 0, 0, 0.1);
+}
+
+img {
+  width: var(--width-100-p);
+  border-radius: var(--border-radius);
+}
+
+.flashcard-wrapper {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .flashcard-wrapper {
+    height: var(--height-100-p);
+  }
+}
+
+.flashcard-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.flashcard-scene {
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+  perspective: 600px;
+  will-change: transform;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+  border-radius: var(--border-radius);
+  -webkit-transition: var(--scale-transition);
+  -moz-transition: var(--scale-transition);
+  -o-transition: var(--scale-transition);
+  transition: var(--scale-transition);
+}
+
+.flashcard-scene.is-scaled {
+  transform: scale(1.1) translateZ(0);
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+  -webkit-transition: var(--scale-transition);
+  -moz-transition: var(--scale-transition);
+  -o-transition: var(--scale-transition);
+  transition: var(--scale-transition);
+}
+
+.flashcard {
+  cursor: pointer;
+  position: relative;
+  transform-style: preserve-3d;
+  width: var(--width-100-p);
+  height: var(--height-100-p);
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
+  -webkit-transition: var(--front-transition);
+  -moz-transition: var(--front-transition);
+  -o-transition: var(--front-transition);
+  transition: var(--front-transition);
+}
+
+.flashcard.is-flipped {
+  transform: rotateY(180deg);
+  -webkit-transition: var(--back-transition);
+  -moz-transition: var(--back-transition);
+  -o-transition: var(--back-transition);
+  transition: var(--back-transition);
+}
+
+.front,
+.back {
+  width: var(--width-100-p);
+  height: var(--height-100-p);
+  position: absolute;
+  opacity: 1;
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 1.25;
+  text-align: center;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: 500ms;
+  -moz-transition: 500ms;
+  -o-transition: 500ms;
+  transition: 500ms;
+}
+
+.front:hover,
+.back:hover {
+  opacity: 0.8;
+  -webkit-transition: 500ms;
+  -moz-transition: 500ms;
+  -o-transition: 500ms;
+  transition: 500ms;
+}
+
+.front {
+  transform: rotateY(0deg);
+  -webkit-transition: var(--front-transition);
+  -moz-transition: var(--front-transition);
+  -o-transition: var(--front-transition);
+  transition: var(--front-transition);
+}
+
+.back {
+  transform: rotateY(180deg);
+  -webkit-transition: var(--back-transition);
+  -moz-transition: var(--back-transition);
+  -o-transition: var(--back-transition);
+  transition: var(--back-transition);
+}
+
+.content {
+  overflow: auto;
+  position: absolute;
+  width: var(--width-100-p);
+  height: var(--height-100-p);
+}
+
+.text {
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  margin: auto;
+  position: absolute;
+  width: var(--width-100-p);
+  transform: translate(-50%, -50%);
+}
+
+.front .text span {
+  padding: 5px;
+  background: rgba(255, 255, 255, 0.75);
+}
+
+.back .text {
+  width: 90%;
+  max-height: 100%;
+  margin-top: 10px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.img-url {
+  top: 0;
+  left: 0;
+  z-index: 0;
+  object-fit: cover;
+  position: relative;
+  width: var(--width-100-p);
+  height: var(--height-100-p);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.flip-button {
+  bottom: 0;
+  right: 5px;
+  padding: 5px;
+  cursor: pointer;
+  position: absolute;
+  background-blend-mode: multiply;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+svg path {
+  mix-blend-mode: screen;
 }

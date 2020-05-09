@@ -1,0 +1,37 @@
+[{
+  "id": 0,
+  "data": {
+    "front": {
+      "text": "A cow goes...",
+      "imgUrl": "https://www.dw.com/image/50907943_403.jpg"
+    },
+    "back": {
+      "text": "MOOO!!",
+      "imgUrl": ""
+    }
+  }
+}, {
+  "id": 1,
+  "data": {
+    "front": {
+      "text": "A cup of Joe",
+      "imgUrl": ""
+    },
+    "back": {
+      "text": "",
+      "imgUrl": "https://images.articulate.com/f:jpg|png,a:retain,b:fff/rise/courses/_Af0P0L1E-1akg7PhqRPNyg0uRFD0pUp/55J-c_DLx5JdTJ_7.jpg"
+    }
+  }
+}, {
+  "id": 2,
+  "data": {
+    "front": {
+      "text": "Lorem Hipsum",
+      "imgUrl": "https://loremipsum.io/assets/images/lorem-ipsum-generator-cicero-engraving.png"
+    },
+    "back": {
+      "text": "Seitan cronut taxidermy, af gastropub single-origin coffee brunch humblebrag schlitz selvage literally. Swag church-key sartorial, 8-bit williamsburg helvetica knausgaard farm-to-table mlkshk vape viral polaroid venmo la croix. Blue bottle kale chips pop-up edison bulb godard crucifix pok pok, organic subway tile taiyaki wayfarers salvia post-ironic snackwave migas. Intelligentsia kogi banh mi, butcher humblebrag mumblecore subway tile lo-fi stumptown narwhal vice literally swag.",
+      "imgUrl": ""
+    }
+  }
+}]
