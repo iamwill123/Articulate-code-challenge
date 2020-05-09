@@ -1,6 +1,6 @@
 Articulate Code Challenge
 
-### By: `William Pei Yuan`
+### By: `William Pei Yuan` - `Written in React & TypeScript`
 
 ## Available Scripts
 
