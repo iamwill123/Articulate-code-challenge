@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Articulate-code-challenge/static/css/main.2558d39d.chunk.css",
+    "main.css": "/Articulate-code-challenge/static/css/main.3b9c4a47.chunk.css",
     "main.js": "/Articulate-code-challenge/static/js/main.9fe7884e.chunk.js",
     "main.js.map": "/Articulate-code-challenge/static/js/main.9fe7884e.chunk.js.map",
     "runtime-main.js": "/Articulate-code-challenge/static/js/runtime-main.66386419.js",
@@ -8,16 +8,16 @@
     "static/js/2.be169b1c.chunk.js": "/Articulate-code-challenge/static/js/2.be169b1c.chunk.js",
     "static/js/2.be169b1c.chunk.js.map": "/Articulate-code-challenge/static/js/2.be169b1c.chunk.js.map",
     "index.html": "/Articulate-code-challenge/index.html",
-    "precache-manifest.08a1dfea1714030d8f146d703279500f.js": "/Articulate-code-challenge/precache-manifest.08a1dfea1714030d8f146d703279500f.js",
+    "precache-manifest.22e41bda4a85be62cac031d4a85580c6.js": "/Articulate-code-challenge/precache-manifest.22e41bda4a85be62cac031d4a85580c6.js",
     "service-worker.js": "/Articulate-code-challenge/service-worker.js",
-    "static/css/main.2558d39d.chunk.css.map": "/Articulate-code-challenge/static/css/main.2558d39d.chunk.css.map",
+    "static/css/main.3b9c4a47.chunk.css.map": "/Articulate-code-challenge/static/css/main.3b9c4a47.chunk.css.map",
     "static/js/2.be169b1c.chunk.js.LICENSE.txt": "/Articulate-code-challenge/static/js/2.be169b1c.chunk.js.LICENSE.txt",
     "static/media/flipIcon.9ae13e8b.svg": "/Articulate-code-challenge/static/media/flipIcon.9ae13e8b.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.66386419.js",
     "static/js/2.be169b1c.chunk.js",
-    "static/css/main.2558d39d.chunk.css",
+    "static/css/main.3b9c4a47.chunk.css",
     "static/js/main.9fe7884e.chunk.js"
   ]
 }

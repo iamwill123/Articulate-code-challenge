@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Articulate-code-challenge/precache-manifest.08a1dfea1714030d8f146d703279500f.js"
+  "/Articulate-code-challenge/precache-manifest.22e41bda4a85be62cac031d4a85580c6.js"
 );
 
 self.addEventListener('message', (event) => {

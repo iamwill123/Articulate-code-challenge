@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "37879da9e6adfe382d899f3fde9c2e08",
+    "revision": "13f7f21c94307201f96774b71af656df",
     "url": "/Articulate-code-challenge/index.html"
   },
   {
-    "revision": "b7d6f52d0d12caccb815",
-    "url": "/Articulate-code-challenge/static/css/main.2558d39d.chunk.css"
+    "revision": "5e3e329a640d38e170af",
+    "url": "/Articulate-code-challenge/static/css/main.3b9c4a47.chunk.css"
   },
   {
     "revision": "004b9296bef1a84935c5",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Articulate-code-challenge/static/js/2.be169b1c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b7d6f52d0d12caccb815",
+    "revision": "5e3e329a640d38e170af",
     "url": "/Articulate-code-challenge/static/js/main.9fe7884e.chunk.js"
   },
   {
