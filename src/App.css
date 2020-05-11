@@ -126,10 +126,15 @@ img {
 }
 
 .content {
-  overflow: auto;
   position: absolute;
   width: var(--width-100-p);
   height: var(--height-100-p);
+}
+
+/* Temporary fix for long text */
+.back .content {
+  overflow: auto;
+  z-index: -1;
 }
 
 .text {
@@ -158,8 +163,8 @@ img {
   top: 0;
   left: 0;
   z-index: 0;
+  position: fixed;
   object-fit: cover;
-  position: relative;
   width: var(--width-100-p);
   height: var(--height-100-p);
 }

@@ -29,3 +29,7 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 The build is minified and the filenames include the hashes.<br />
 Your app is ready to be deployed!
+
+## Improvements given more time
+
+Detect if text coming from JSON is larger than the parent container, add `overflow-y: scroll` to the parent container.
